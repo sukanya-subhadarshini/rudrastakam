@@ -1,0 +1,53 @@
+<div class="container">
+
+  <h1>🕉️ Rudrastakam</h1>
+
+  <p class="subtitle">
+    Sacred Hymn Dedicated To Lord Shiva
+  </p>
+
+  <div class="buttons">
+
+    <button (click)="language='sanskrit'">
+      🕉️ Sanskrit
+    </button>
+
+    <button (click)="language='english'">
+       English
+    </button>
+    <button (click)="language='odiya'">
+       Odia
+    </button>
+  </div>
+
+  <div class="card">
+
+    <pre *ngIf="language === 'sanskrit'">
+{{ rudrastakam.sanskrit }}
+    </pre>
+
+    <pre *ngIf="language === 'english'">
+{{ rudrastakam.english }}
+    </pre>
+
+     <pre *ngIf="language === 'odiya'">
+{{ rudrastakam.odiya }}
+    </pre>
+
+  </div>
+
+</div>
+<footer class="footer">
+
+  <h3>🕉️ Har Har Mahadev 🕉️</h3>
+
+  <p>
+    Rudrastakam is a sacred hymn dedicated to Lord Shiva,
+    bringing peace, devotion, and spiritual strength.
+  </p>
+
+  <p class="credit">
+    Made with ❤️ using Angular
+  </p>
+
+</footer>

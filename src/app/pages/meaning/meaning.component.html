@@ -1,0 +1,40 @@
+<p class="subtitle">
+  Understand the deeper meaning of Rudrastakam in your preferred language 🙏
+</p>
+<div class="container">
+
+  <h1>📖 Rudrastakam Meaning</h1>
+
+  <div class="buttons">
+
+    <button (click)="language='english'">
+       English
+    </button>
+
+    <button (click)="language='hindi'">
+       Hindi
+    </button>
+
+    <button (click)="language='odia'">
+      🌺 Odia
+    </button>
+
+  </div>
+
+  <div class="card">
+
+    <pre *ngIf="language==='english'">
+{{ meanings.english }}
+    </pre>
+
+    <pre *ngIf="language==='hindi'">
+{{ meanings.hindi }}
+    </pre>
+
+    <pre *ngIf="language==='odia'">
+{{ meanings.odia }}
+    </pre>
+
+  </div>
+
+</div>

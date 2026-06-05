@@ -1,0 +1,22 @@
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 50px;
+  background:#111827;
+}
+
+h2{
+  color:#ff9800;
+}
+
+.links a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:600;
+}
+
+.links a:hover{
+  color:#ff9800;
+}
